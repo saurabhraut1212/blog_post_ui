@@ -1,3 +1,3 @@
 export const getBaseUrl = (): string => {
-  return 'http://localhost:5000/api';
+  return 'https://blog-post-server-nbxg.onrender.com/api';
 };
