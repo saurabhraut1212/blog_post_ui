@@ -11,7 +11,8 @@
     "prepare": "husky",
     "prepare-husky": "npx husky init; echo \"# npm test\nnpx lint-staged\" > .husky/pre-commit; echo \"npm build\" > .husky/pre-push",
     "preview": "vite preview",
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
@@ -23,6 +24,7 @@
     "@hookform/resolvers": "^5.0.1",
     "@tailwindcss/vite": "^4.1.6",
     "framer-motion": "^12.11.3",
+    "jwt-decode": "^4.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.56.3",
