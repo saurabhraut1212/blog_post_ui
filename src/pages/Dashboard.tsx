@@ -3,6 +3,7 @@ import { useAuth } from '../hooks/useAuth';
 
 const Dashboard: React.FC = () => {
   const { user } = useAuth();
+  console.log(user, 'user is here');
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-100 to-indigo-200 p-4">
