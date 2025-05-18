@@ -18,7 +18,14 @@ const CreateOrEditBlog: React.FC = () => {
 
   useEffect(() => {
     const fetchBlog = async () => {
-      if (!id) return;
+      if (!id) {
+        setTitle('');
+        setContent('');
+        setAuthorName('');
+        setLoading(false);
+        return;
+      }
+
       try {
         const blog = await getBlogById(id);
         console.log(blog, 'blog with id');
